@@ -1,0 +1,222 @@
+/*body*/
+body {
+    margin: 0%; /*Ensures site displays to edge of browser screen*/
+}
+
+/*Navbar*/
+.Navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Navbar text*/
+.Navbar a {
+    float: left; /*Text floats on left of screen*/
+    display: block; /*Ensures text is displayed on same line/row, instead of new line*/
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none; /*Otherwise, text has underline*/
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center; /*Text centered within container*/
+}
+
+/*Navbar hover*/
+.Navbar a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/*Navbar home button*/
+.Navbar a.active {
+    background-color: darkgrey;
+}
+
+/*Video*/
+#Network {
+    position: fixed; /*Video in fixed position on page*/
+    right: 0;
+    bottom: 0; /*This and the line above ensure there's no space between video edge and site edge*/
+    min-width: 100%; /*Ensures video is displayed across full width of page*/
+    z-index: -1; /*Video will be behind other content*/
+}
+
+/*Text over video*/
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px; 
+    margin-top: 23%;
+}
+
+/*Table*/
+* { /*The asterick will apply effects to all elements on page*/
+    box-sizing: border-box; /*Creates a box with a border within which we will place most of our text*/
+}
+
+.Column_1 {
+    float: left;
+    width: 50%; /*Ensuring one column takes up half of page width*/
+    padding: 10px;
+    padding-top: 3%; /*Ensures there's space between the top of the column and headings*/
+    height: 400px; /*Sets the height of the column. Changing text within the column might require changing the height*/
+    background-color: oldlace;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: slategray;
+}
+
+.Column_3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3.5%;
+    height: 450px;
+    background-color: slategray;
+}
+
+.Row:after { /*This inserts something after the content of the Row class elements*/
+    content: ""; /*Removing this would make the footer overlap a column*/
+    display: table; /*Treats the element as a table*/
+    clear: both; /*This clears any other elements from floating on the left or right of an element*/
+}
+
+/*Heading 1 elements*/
+h1 {
+    text-transform: uppercase; /*Headings are capitalizing*/
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+
+/*Paragraph elements*/
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Center align elements*/
+center {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Anchor elements*/
+a {
+    color: blue; /*Links will be blue*/
+}
+
+/*Quotes*/
+q {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*Images*/
+img {
+    filter: grayscale(75%); /*Rids images of 75% of color. Can be adjusted later*/
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    margin-left: auto; /*This and the next line auto centers images*/
+    margin-right: auto;
+    display: block; /*Ensures images will be centered*/
+}
+
+/*Contact form*/
+input[type=text] { /*Covers the input sections of form*/
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /*Specifies how an element is resized; vertical allows user to resize height of the element*/
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/*Submit button*/
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/*Hover for submit button*/
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.5); /*Makes button increase 1.5 times in size*/
+    transition: transform 1.5s; /*Transform effect lasts 1.5 seconds*/
+}
+
+/*Form element*/
+form {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    font-family: "Trebuchet MS", Optima;
+}
+
+/*Center align element hover effect*/
+center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+/*Paragraph element hover effect*/
+p:hover {
+    color: #00004d;
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+/*Heading 1 hover*/
+h1:hover {
+    color: black;
+    font-weight: normal;
+}
+
+/*Image hover*/
+img:hover {
+    filter: grayscale(5%); /*Brings most of color back*/
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/*Footer*/
+footer {
+    padding: 2%;
+    background-color: white;
+}
